@@ -26,8 +26,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
- zap_scan:
+ 
+  zap_scan:
     needs: sonarcloud
     runs-on: ubuntu-latest
     name: ZAP
